@@ -1,6 +1,7 @@
-# Assignment_Classification_with_Machine_Learning_Models
+### 📊 Assignment: Classification with Machine Learning Models
 
- flowchart TD
+```mermaid
+flowchart TD
     A[Start: Load Dataset] --> B[Data Understanding]
     B --> B1[Display first few rows]
     B --> B2[Identify input features & target]
