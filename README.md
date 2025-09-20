@@ -1,75 +1,50 @@
 # Assignment_Classification_with_Machine_Learning_Models
 
-Assignment: Classification with Machine
-Learning Models
-Problem Statement
-The goal of this assignment is to apply multiple classification algorithms to real-world
-datasets. You will build, evaluate, and compare models such as Decision Tree, Random
-Forest, AdaBoost, XGBoost, and CatBoost.
-You are required to perform data exploration, preprocessing, model building, and
-optimization to understand how classification models behave on different datasets.
-Dataset Links
-1. Telco Customer Churn – Kaggle
-2. HR Analytics (Employee Attrition) – Kaggle
-3. Stroke Prediction – Kaggle
-Assignment Guidelines
-1. Data Understanding
-●
-●
-●
-●
-Load the dataset and display the first few rows.
-Identify the input features and the target variable.
-Check data types (numerical vs categorical).
-Check for missing values and duplicates.
-2. Exploratory Data Analysis (EDA)
-●
-Plot the distribution of the target variable.
-●
-Visualize relationships between features and the target (e.g., Age vs Survival,
-MonthlyCharges vs Churn).
-●
-Compare categories (e.g., Gender, Department, Smoking Status).
-●
-Create a correlation heatmap for numerical features.
-3. Data Preprocessing
-●
-Encode categorical variables.
-●
-Scale numerical features if required.
-●
-Handle missing values appropriately.
-●
-Split into training and testing sets.
-4. Model Building (Apply All Classifiers)
-You must apply the following classifiers one by one:
-1. Decision Tree
-2. Random Forest
-3. AdaBoost
-4. XGBoost
-5. CatBoost
-For each classifier:
-●
-Train the model on training data.
-●
-Evaluate on testing data using:
-○
-Accuracy, Precision, Recall, F1-score
-○
-Confusion Matrix
-5. Model Optimization
-●
-●
-●
-Perform hyperparameter tuning for at least 2 models (e.g., Random Forest &
-XGBoost).
-Compare tuned performance vs default.
-Discuss overfitting/underfitting observations.
-6. Model Evaluation and Comparison
-●
-●
-●
-Compare the performance of all 5 models in a summary table.
-Identify the best-performing model.
-Discuss which features are most important (Feature Importance plots for tree-based
-models).
+flowchart TD
+    A[Start: Load Dataset] --> B[Data Understanding]
+    B --> B1[Display first few rows]
+    B --> B2[Identify input features & target]
+    B --> B3[Check data types]
+    B --> B4[Check missing values & duplicates]
+    
+    B4 --> C[Exploratory Data Analysis (EDA)]
+    C --> C1[Plot target distribution]
+    C --> C2[Feature vs Target visualizations]
+    C --> C3[Category comparisons]
+    C --> C4[Correlation heatmap]
+    
+    C4 --> D[Data Preprocessing]
+    D --> D1[Encode categorical variables]
+    D --> D2[Scale numerical features]
+    D --> D3[Handle missing values]
+    D --> D4[Split into train & test sets]
+
+    D4 --> E[Model Building: Apply Classifiers]
+    E --> E1[Decision Tree]
+    E --> E2[Random Forest]
+    E --> E3[AdaBoost]
+    E --> E4[XGBoost]
+    E --> E5[CatBoost]
+
+    E1 --> F1[Evaluate: Accuracy, Precision, Recall, F1, Confusion Matrix]
+    E2 --> F2
+    E3 --> F3
+    E4 --> F4
+    E5 --> F5
+
+    F1 --> G[Model Optimization]
+    F2 --> G
+    F3 --> G
+    F4 --> G
+    F5 --> G
+
+    G --> G1[Hyperparameter Tuning (e.g., RF & XGB)]
+    G1 --> G2[Compare Tuned vs Default]
+    G2 --> G3[Discuss Overfitting/Underfitting]
+
+    G3 --> H[Model Evaluation & Comparison]
+    H --> H1[Compare all models in table]
+    H --> H2[Identify best-performing model]
+    H --> H3[Plot Feature Importances]
+
+    H3 --> I[End]
